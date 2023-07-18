@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom style */
+* ,
+*::before ,
+*::after
+{
+    box-sizing: border-box;
+}
+.container{
+max-width: 1200px;
+margin: 0 auto;
+padding: 30px 20px;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.flex-45{
+    flex: 0 1 45%;
+}
+.flex-40{
+    flex: 0 1 40%;
+    border: .12rem solid darkgrey;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+html{
+    font-size: 20px;
+}
+body{
+    line-height: 1.4;
+}
+/* header */
+header{
+background-color: rgb(89,191,194);
+color: white;
+padding: 2rem 0;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+}
+.nav a:hover{
+    color: darkblue;
+}
+/* Hero section */
+.hero{
+    background-color: rgb(89,191,194);
+    padding: 2rem 1rem;
+    text-align: center;
+    height: 28rem;
+}
+h1{
+    font-size:3rem;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 2rem 1rem;
+}
+.trial{
+    padding: 1rem 1rem;
+    width: 20%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: rgb(58,76,125);
+    background-color: white;
+    border: 0;
+    margin-top: .7rem;
+    border-radius:.4rem;
+}
+.hero img{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 63%;
+    bottom: 50%;
+    left: 20%;
+    right: 50%;
+}
+/* anchor */
+.anchor{
+    margin-top: 15rem;
+    padding: 3rem;
+}
+.anchor a{
+    color: rgb(189,200,224);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+hr{
+    color: rgb(189,200,224);
+    margin-top: 2rem;
+}
+
+/* Learning */
+h2{
+    color: rgb(40,62,125);
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+p{
+    color: rgb(103,124,171);
+    font-size: 1.2rem
+}
+.learning button{
+    background-color: rgb(89,191,194);
+    color: white;
+    border: 0;
+    font-size: 1rem;
+    padding: .7rem .7rem;
+    margin: 1rem 0;
+ 
+}
+/* Score */
+.score{
+    padding: 2rem 0;
+}
+.score h2{
+    text-align: center;
+    padding: 2rem 0;
+    font-weight: 600;
+}
+table{
+    padding: 1rem;
+   margin: 0 auto;
+   border: 1px solid rgb(177, 175, 175);
+   border-radius: 5px;
+}
+tr , td {
+    border: 1px solid rgb(177, 175, 175);
+    padding: .5rem 1rem;
+    padding-right: 5rem;
+    text-align: left;
+    color:rgb(109, 107, 107) ;
+   
+}
+th{
+    padding: .5rem 1rem;
+    text-align: left; 
+    background-color: rgb(61,158,161);
+    color: white;
+    font-weight: 600;
+}
+tr:nth-child(2n+1){
+    background-color: rgb(213,229,229);
+}
+/* info */
+.info h2{
+    text-align: center;
+    line-height: 1.5
+}
+.btn{
+    background-color: rgb(187,236,236) ;
+    height: 1rem;
+    width: 3rem;
+    margin: 0 1rem;
+    padding: .7rem 1rem;
+    border-radius: 2rem;
+}
+.circle{
+    text-align: center;
+   margin-top: -.49rem;
+   margin-left: .6rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(89,191,194);
+}
+.info .flex-40 h4{
+    font-size: 2rem;
+    color: rgb(89,191,194);
+    font-weight: 600;
+    text-align: center;
+    
+}
+.info .flex-40 h4::before{
+    content: "$";
+    color: rgb(89,191,194);
+    font-size: 1.1rem;
+    margin-right: .4rem;
+}
+.info .flex-40 h4::after{
+    content: "/Month";
+    color: rgb(170, 171, 174);
+    font-size: 1.1rem;
+    margin-left: .4rem;
+}
+.info li{
+    color: rgb(109, 107, 107);
+    padding: 1rem 1rem;
+    font-weight: 600;
+}
+.info li #tick{
+    color: rgb(125,205,207);
+    margin-right: 1rem;
+}
+.info li #cross{
+    color: rgb(233,69,118);
+    margin-right: 1rem;
+}
+.flex-40 button{
+    font-size: .9rem;
+    padding: .5rem 3rem;
+    width: 100%;
+    color: rgb(65,84,140);
+    background-color: white;
+    border: 0;
+    border: 1px solid rgb(192, 193, 197);
+    border-radius: .3rem;
+}
+.flex-40 button:hover{
+    color: white;
+    background-color: rgb(89,191,194);
+    border: 0;
+}
+/*Days trial */
+.days-trial{
+    background-color: rgb(89,191,194);
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+.days-trial h2{
+    color: white;
+}
+.days-trial button{
+    padding: .8rem 3rem;
+    background-color: white;
+    border: 0;
+    font-size: 1rem;
+    border-radius: .4rem;
+    margin-top: 2rem;
+    color: rgb(64,84,140);
+}
+/* footer */
+.footer h3{
+    margin-top: 0;
+    color: rgb(40,62,125);
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+.footer li{
+    color: rgb(104,125,172);
+    padding: .5rem 0;
+    font-size: 1rem;
+}
+.align-start{
+    align-items: flex-start;
+}
+.footer i {
+    margin-top: 1.4rem;
+    margin-right: .5rem;
+    background-color: rgb(89,191,194);
+    color: white;
+    padding: .5rem;
+    border-radius: 50%;
+}
